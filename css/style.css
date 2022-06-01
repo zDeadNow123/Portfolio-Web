@@ -125,10 +125,33 @@
   }
 
   .demo-projects {
-      display: grid;
+      display: flex;
       align-items: center;
       justify-items: center;
-      grid-template-columns: repeat(3, 20em);
+      gap: 3em;
+  }
+
+  @media  (max-width: 840px) {
+    .demo-projects {
+      gap: 0;
+      flex-direction: column;
+    }
+
+    .card2, .card3 {
+      position: absolute;
+    }
+
+    .card2 {
+      opacity: 50%;
+      z-index: -1;
+      margin-left: 5em;
+    }
+
+    .card3 {
+      opacity: 50%;
+      z-index: -2;
+      margin-right: 5em;
+    }
   }
   
   .card {

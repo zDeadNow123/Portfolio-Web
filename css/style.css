@@ -289,3 +289,12 @@ form {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+.about-me {
+  color: white;
+  font-size: 1.5em;
+  max-width: 50em;
+  text-align: justify;
+  margin: auto;
+  margin-top: 1cm;
+}
